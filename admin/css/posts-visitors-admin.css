@@ -1,0 +1,66 @@
+/**
+ * All of the CSS for admin.
+ */
+
+ /* Short Code Clipboard */
+ .tooltip, .tooltip2, .tooltip3, .tooltip4 , .tooltip5{
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext, .tooltip2 .tooltiptext2, .tooltip3 .tooltiptext3, .tooltip4 .tooltiptext4, .tooltip5 .tooltiptext5  {
+    visibility: hidden;
+    width: 140px;
+    background-color: rgb(73, 166, 206);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after, .tooltip2 .tooltiptext2::after, .tooltip3 .tooltiptext3::after, .tooltip4 .tooltiptext4::after, .tooltip5 .tooltiptext5::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(73, 166, 206) transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext, .tooltip2:hover .tooltiptext2, .tooltip3:hover .tooltiptext3, .tooltip4:hover .tooltiptext4, .tooltip5:hover .tooltiptext5 {
+    visibility: visible;
+    opacity: 1;
+  }
+ /* tabel popular post visitors in dashboard widge */
+
+  #dashtabel {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  #dashtabel thead tr{
+    background-color: #dddddd;
+  
+  }
+  #dashtabel td, #dashtabel th {
+    border-bottom: 2px solid #000000;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  #dashtabel tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  p.description {
+    font-size: 13px;
+    font-style: italic;
+  }
